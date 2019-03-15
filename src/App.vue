@@ -1,19 +1,20 @@
 <template>
      <div class="layui-layout layui-layout-admin"  id="app">
         <div class="layui-header ymheader">
-            <a @click="$options.filters.openRoute('/')">
-                <img class="logo layui-circle" v-if="siteInfo.LogoUrl" :src="siteInfo.LogoUrl">
-                <img class="logo layui-circle" v-else src="./assets/images/logo.png">
+            <a @click="$options.filters.openRoute('/')" class="indextag">
+                个人站|
+                <!-- <img class="logo layui-circle" v-if="siteInfo.LogoUrl" :src="siteInfo.LogoUrl">
+                <img class="logo layui-circle" v-else src="./assets/images/wechat.jpeg"> -->
             </a>
             <div class="searchTxt">
                 <input type="text" v-model="searchTxt" class="layui-input" placeholder="搜索" @keyup.enter="search"/>
             </div>
-            <div class="user-action" v-if="siteInfo.SiteName">
+            <!-- <div class="user-action" v-if="siteInfo.SiteName">
                <a @click="$options.filters.openRoute('/')" v-text="siteInfo.SiteName"></a>
             </div>
             <div class="user-action" v-else>
                <a @click="$options.filters.openRoute('/')" >个人工具站 - By 易墨</a>
-            </div>
+            </div> -->
         </div>
         <div class="layui-side layui-bg-black" id="leftMenu">
             <div class="layui-side-scroll">
@@ -23,12 +24,12 @@
         <div class="layui-body layui-tab-content" id="rightContent">
             <router-view></router-view>
         </div>
-        <div class="layui-footer footer footer-doc" id="contentFooter" >
+        <!-- <div class="layui-footer footer footer-doc" id="contentFooter" >
             <p v-if="siteInfo.FooterLinks && siteInfo.FooterLinks.length>0">
                 <a :href="item.Url" v-text="item.Title" v-for="item in siteInfo.FooterLinks"  target="_blank"></a>
                 <a @click="openMsg" v-if="siteInfo.ShowMsg">少年需要留个言么？</a>
             </p>
-        </div>
+        </div> -->
     </div>
 </template>
 <script>
@@ -75,7 +76,9 @@ export default {
         }
     },
     created(){
-        this.siteInfo=window.siteData.SiteInfo;
+        //不需要下角标
+        // this.siteInfo=window.siteData.SiteInfo;
+        //todo 为什么菜单目录放到initdata里，不是直接写好
         this.menuItems=window.siteData.MenuItems;
     }
 }

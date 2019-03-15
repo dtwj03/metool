@@ -49,11 +49,11 @@ export default {
                     Name: 'main',
                     Title: '编码转换'
                 },
-                {
-                    Name: 'code',
-                    Title: '查看代码',
-                    Url: 'http://coding.net/u/yimocoding/p/metools/git/blob/master/src/pages/encode.vue'
-                }
+                // {
+                //     Name: 'code',
+                //     Title: '查看代码',
+                //     Url: 'http://coding.net/u/yimocoding/p/metools/git/blob/master/src/pages/encode.vue'
+                // }
             ],
             model: {
                 beforeTxt: '',

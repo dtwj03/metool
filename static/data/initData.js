@@ -1,8 +1,8 @@
 window.siteData={
     MenuItems:getMenuItems(),
-    SiteInfo:getSiteInfo(),
+    // SiteInfo:getSiteInfo(),
 }
-initTongJi()
+// initTongJi()
 function getMenuItems(){
     return [
         {
@@ -50,22 +50,22 @@ function getMenuItems(){
             MenuName: 'Markdown转换',
             MenuUrl: '/mdconvert'
         },
-        {
-            Key: '300',
-            MenuName: '友情链接',
-            ChildrenMenu:[
-                {
-                    Key: '301',
-                    MenuName: '易墨‘s_Blog',
-                    MenuUrl: 'http://www.yimo.link',
-                },
-                {
-                    Key: '303',
-                    MenuName: '都没有？那就戳这里',
-                    MenuUrl: 'http://tool.oschina.net/',
-                }
-            ]
-        }
+        // {
+        //     Key: '300',
+        //     MenuName: '友情链接',
+        //     ChildrenMenu:[
+        //         {
+        //             Key: '301',
+        //             MenuName: '易墨‘s_Blog',
+        //             MenuUrl: 'http://www.yimo.link',
+        //         },
+        //         {
+        //             Key: '303',
+        //             MenuName: '都没有？那就戳这里',
+        //             MenuUrl: 'http://tool.oschina.net/',
+        //         }
+        //     ]
+        // }
     ];
 }
 function getSiteInfo(){

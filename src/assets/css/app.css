@@ -22,12 +22,20 @@ a{cursor: pointer;}
       height: 60px;
   }
   .ymheader .searchTxt{
-          position: absolute;
+    position: absolute;
     width: 200px;
     left: 120px;
     top: 16px;
-    
+    font-size: 18px
   }
+
+  .ymheader .indextag{
+    color: white;
+    top: 20px;
+    left: 30px;
+    position: absolute;
+    }
+
   .ymheader .searchTxt input{
           height: 30px;
     line-height: 30px;
