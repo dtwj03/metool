@@ -1,7 +1,7 @@
 <template>
     <div style="width:100%;height:100%;" class="layui-tab-brief">
         <ul class="layui-tab-title site-demo-title" style="margin-bottom:10px;">
-            <li class="layui-this">欢迎您2</li>
+            <li class="layui-this">欢迎您22</li>
             <li @click="disabledColor" v-text="colorStatus"></li>
             <li tabcode="code" @click="$options.filters.openRedirect('http://coding.net/u/yimocoding/p/metools/git/blob/master/src/pages/home.vue')">查看代码</li>
         </ul>
