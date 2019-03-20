@@ -1,4 +1,5 @@
 # 个人工具站点
+用来测试travis CI流程,配置好了每个push都会自动构建
 
 **这个工具个人及朋友实际使用的时候主要还是 Chrome 插件居多，欢迎使用(https://github.com/yimogit/metools-plugin)**
 
